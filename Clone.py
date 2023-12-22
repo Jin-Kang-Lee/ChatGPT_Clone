@@ -1,4 +1,4 @@
-import openai
+from openai import OpenAI
 import streamlit as st
 
 
@@ -6,7 +6,7 @@ st.title("ChatGPT-Mimic")
 
 #Set the OpenAI API Key from Streamlit - file is being pulled from secrets.toml
     #!!!GENERATE AND USE YOUR OWN API KEY!!!
-client = OpenAI(api_key = st.secrets["OPENAI_API_KEY"])
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 #Set a GPT default model
 if "openai_model" not in st.session_state:
