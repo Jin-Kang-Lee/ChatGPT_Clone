@@ -1,7 +1,6 @@
+import openai
 import streamlit as st
-import pandas as pd
-import numpy as np
-from openai import OpenAI
+
 
 st.title("ChatGPT-Mimic")
 
