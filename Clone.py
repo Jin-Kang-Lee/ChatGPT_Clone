@@ -56,7 +56,7 @@ if prompt := st.chat_input("Ask me anything..."):
             stream=True,
         ):
             #Append full_response whenever we get a message from openai
-            full_response += response.choices[0].delta.get("content", "")
+            full_response += (response.choices[0].delta.content or "")
 
             #Adding effect to make it look like the assistant is thinking
             message_placeholder.markdown(full_response + "▌")
