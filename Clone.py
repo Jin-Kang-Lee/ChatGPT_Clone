@@ -44,7 +44,7 @@ if prompt := st.chat_input("Ask me anything..."):
         #Initial full response is empty
         full_response = ""
 
-        for response in client.chat.completions.create(
+        for response in client.chat.completions.create( 
 
             #Plug in the chatgpt model we are using
                 #Set stream to true as it will reply to our prompt live
