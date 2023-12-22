@@ -45,7 +45,7 @@ if prompt := st.chat_input("Ask me anything..."):
         full_response = ""
 
         for response in client.chat.completions.create( 
-
+            #TESTTT
             #Plug in the chatgpt model we are using
                 #Set stream to true as it will reply to our prompt live
             model=st.session_state["openai_model"],
